@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>parlour</title>
+<style>
+.heading_1{
+    position:absolute;
+    left:550px;
+    color:deeppink;
+}
+.img_1{
+    position:absolute;
+    width:1430px;
+    height:500px;
+    top:100px;
+}
+.heading_2{
+    position:absolute;
+    color:red;
+    top:270px;
+    left:500px;
+}
+#img{
+    position:absolute;
+    top:650px;
+    width:400px;
+    height:300px;
+    left:450px;
+}
+.div_1
+{
+    position:absolute;
+    font:20px;
+    top:940px;
+}
+.heading_3
+{
+    color:darkmagenta;
+}
+.para_1
+{
+    color:blueviolet;
+}
+.list_1
+{
+    color:deepskyblue;
+}
+.footer_1
+{
+    position:absolute;
+    top:1110px;
+    width:1430px;
+    height:170px;
+}
+</style>
+</head>
+<body>
+<h1 class="heading_1">Beauty Bloom</h1>
+<img class="img_1" src="https://assets.indiaonline.in/cg/mah/Amravati/City-Guide/Parlour-Services.jpg">
+<h2 class="heading_2">"Where Beauty Meets Perfection"</h2>
+<img id="img">
+<script>
+let images = [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVSJpg1Ifaly2G4JfNz1rZqAVLtLP0dt93Nw&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuTa3Y7CyB_2VxKKxjeg2DmbE0jK4C9IL_g&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoR3pXvIOFl340sfYrRTlFLoB7brtuLEtXw&s",
+"https://media.gettyimages.com/id/1340302535/photo/beautiful-indian-woman-getting-ready-to-a-wedding-reception-at-the-beauty-parlor.jpg?s=612x612&w=gi&k=20&c=5CveAJOvkpSp5w3isItUnedRwK1Yn_YcTJFYGhMvRDA="
+];
+let i = 0;
+setInterval(function(){
+    document.getElementById("img").src = images[i];
+    i++;
+    if(i == images.length){
+        i = 0;
+    }
+},2000);
+</script>
+<div class="div_1">
+<p class="para_1">Welcome to Beauty Bloom, where beauty meets elegance. 
+We provide high-quality beauty and skincare services.</p>
+<h3 class="heading_3">Our Services</h3>
+<ul class="list_1">
+  <li>Bridal Makeup</li>
+  <li>Hair Styling</li>
+  <li>Facials</li>
+  <li>Hair Spa</li>
+</ul>
+</div>
+<footer class="footer_1" style="background-color:antiquewhite; color:black; padding:20px; text-align:center">
+    <h2>Beauty Bloom</h2>
+    <p>Your Beauty, Our Passion</p>
+    <address>
+        Sarojinidevi, Andhra Pradesh <br>
+        Phone: +91 98765 43210 <br>
+        Email: beautybloom@gmail.com
+    </address>
+    <p>© 2026 Beauty Bloom</p>
+</footer>
+</body>
+</html>
